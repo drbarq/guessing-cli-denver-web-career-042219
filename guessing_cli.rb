@@ -8,6 +8,11 @@ def run_guessing_game
   guess = gets.chomp
   random_number = rand(6)
 
+  if guess == "exit"
+    return  "Goodbye"
+    exit
+  end
+
   while guess != random_number do
     if guess.to_i == random_number
       puts  "You guessed the correct number!"
@@ -24,10 +29,7 @@ def run_guessing_game
 
   end
 
-  if guess == "exit"
-    return  "Goodbye"
-    exit
-  end
+
 
 
 
