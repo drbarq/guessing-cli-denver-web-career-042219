@@ -11,7 +11,6 @@ def run_guessing_game
   if guess == "exit"
     return  "Goodbye"
     exit
-  end
 
 
     while guess != "exit" do
