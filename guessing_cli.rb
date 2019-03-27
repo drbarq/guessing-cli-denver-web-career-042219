@@ -8,10 +8,7 @@ def run_guessing_game
   guess = gets.chomp
   random_number = rand(6)
 
-  if guess == "exit"
-    return  "Goodbye"
-    exit
-  end 
+
 
     while guess != "exit" do
       if guess.to_i == random_number
@@ -22,6 +19,11 @@ def run_guessing_game
     guess = gets.chomp
     random_number = rand(6)
   end
+
+  if guess == "exit"
+    return  "Goodbye"
+    exit
+  end 
 
 end
 
