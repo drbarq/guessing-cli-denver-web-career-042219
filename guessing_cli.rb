@@ -27,7 +27,7 @@ def run_guessing_game
 
 
     while guess != "exit" do
-      if guess == "exit"
+      if guess.to_i == random_number
         puts  "You guessed the correct number!"
       elsif guess.to_i != random_number
         puts  "The computer guessed #{random_number}."
