@@ -26,11 +26,6 @@ def run_guessing_game
     guess = gets.chomp
     random_number = rand(6)
 
-
   end
-
-
-
-
 
 end
