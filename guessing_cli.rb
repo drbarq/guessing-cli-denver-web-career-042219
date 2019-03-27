@@ -15,16 +15,15 @@ def run_guessing_game
     else
       puts  "The computer guessed #{random_number}."
     end
-    
+
     guess = gets.chomp
     random_number = rand(6)
-    
   end
 
   if guess == "exit"
     puts  "Goodbye"
     exit
-  end 
+  end
 
 end
 
