@@ -29,16 +29,11 @@ def run_guessing_game
     while guess != "exit" do
       if guess.to_i == random_number
         puts  "You guessed the correct number!"
-      elsif guess.to_i != random_number
+      else
         puts  "The computer guessed #{random_number}."
-      elsif guess == "exit"
-        puts "Goodbye"
-        exit
       end
-
     guess = gets.chomp
     random_number = rand(6)
-
   end
 
 end
