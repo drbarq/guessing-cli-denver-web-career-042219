@@ -15,15 +15,7 @@ def run_guessing_game
 
 #  end
 
-  while guess != random_number do
-    if guess.to_i == random_number
-      puts  "You guessed the correct number!"
-    elsif guess.to_i != random_number
-      puts  "The computer guessed #{random_number}."
-    elsif guess == "exit"
-      puts "Goodbye"
-      exit
-    end
+
 
 
     while guess != "exit" do
@@ -37,3 +29,19 @@ def run_guessing_game
   end
 
 end
+
+
+
+
+=begin
+while guess != random_number do
+  if guess.to_i == random_number
+    puts  "You guessed the correct number!"
+  elsif guess.to_i != random_number
+    puts  "The computer guessed #{random_number}."
+  elsif guess == "exit"
+    puts "Goodbye"
+    exit
+  end
+
+=end 
