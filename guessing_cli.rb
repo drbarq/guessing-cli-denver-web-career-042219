@@ -9,21 +9,22 @@ def run_guessing_game
   random_number = rand(6)
 
 
+  until guess == "exit"
+    if guess.to_i == random_number
+      puts  "You guessed the correct number!"
+    else
+      puts  "The computer guessed #{random_number}."
+    end
 
-    while guess != "exit" do
-      if guess.to_i == random_number
-        puts  "You guessed the correct number!"
-      else
-        puts  "The computer guessed #{random_number}."
-      end
     guess = gets.chomp
     random_number = rand(6)
+    
   end
 
   if guess == "exit"
     return  "Goodbye"
     exit
-  end 
+  end
 
 end
 
